@@ -6,11 +6,20 @@
     </h1>
     </head>
   <body>
-    <form action="index2" method="post">
+    <form action="index" method="post">
       <input type="text" name="box1">
       <button type="submit">Submit</button>
       {% csrf_token %}
-    </body>
-  </form>
+    </form>
+    <form action="index2" method="post">
+      <input type="text" name="box2">
+      <button type="submit">Submit</button>
+      {% csrf_token %}
+    </form>
+    <form action="index3" method="post">
+      <input type="text" name="box3">
+      <button type="submit">Submit</button>
+      {% csrf_token %}
+    </form>
   </body>
 </html>
