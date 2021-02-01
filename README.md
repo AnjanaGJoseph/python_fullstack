@@ -29,3 +29,15 @@ Open command prompt in your desired folder, then follow the steps.
  command - python manage.py startapp firstapp (make sure you are creating this inside the the project)
 12. Let's make our project live
  command - python manage.py r-unserver
+
+#### All kind of code editing will be undertaken in views.py and url.py in firstapp folder. 
+A templates folder should be created inside the firstapp folder for the front end codes. By default we will have an urls.py file inside the firstproject but not inside the firstapp so create a urls.py file inside firstapp. 
+
+Edit the urls.py file inside the firsproject
+
+from django.contrib import admin
+from django.urls import path,include
+ 
+urlpatterns = [
+    path('',include('firstapp.urls')),
+    path('admin/', admin.site.urls)
